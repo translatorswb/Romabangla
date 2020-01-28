@@ -39,7 +39,8 @@ char *readfilestr(FILE *f)
 }
 wchar_t retIndicChar(int psciiCode)
 {
-    wchar_t ret= L'\u0900';
+    //wchar_t ret= L'\u0900'; //Devanagari
+    wchar_t ret= L'\u0980'; //Bengali
     setlocale(LC_CTYPE, "");
     return (psciiCode+ret);
 }// this function will return indic charachter on providing an integer value
